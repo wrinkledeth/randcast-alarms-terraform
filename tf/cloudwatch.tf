@@ -7,8 +7,9 @@ resource "aws_cloudwatch_log_metric_filter" "eth_goerli_randomness_fulfilled" {
   metric_transformation {
     namespace     = "randcast"
     name          = "eth_goerli_randomness_fulfilled"
-    value         = "5"
+    value         = "1"
     default_value = 0
+    unit          = "Count"
   }
 }
 
@@ -20,8 +21,9 @@ resource "aws_cloudwatch_log_metric_filter" "op_goerli_randomness_fulfilled" {
   metric_transformation {
     namespace     = "randcast"
     name          = "op_goerli_randomness_fulfilled"
-    value         = "420"
+    value         = "1"
     default_value = 0
+    unit          = "Count"
   }
 }
 
@@ -33,8 +35,9 @@ resource "aws_cloudwatch_log_metric_filter" "base_goerli_randomness_fulfilled" {
   metric_transformation {
     namespace     = "randcast"
     name          = "base_goerli_randomness_fulfilled"
-    value         = "84531"
+    value         = "1"
     default_value = 0
+    unit          = "Count"
   }
 }
 

@@ -1,10 +1,3 @@
-# # Slack URL is stored in SSM Parameter Store
-# resource "aws_ssm_parameter" "slack_url" {
-#   name  = "slack_url"
-#   type  = "SecureString"
-#   value = "https://hooks.slack.com/services/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"
-# }
-
 # Create an IAM role for the lambda function
 resource "aws_iam_role" "send_cloudwatch_alarms_to_slack" {
   name = "send-cloudwatch-alarms-to-slack"
@@ -29,6 +22,12 @@ POLICY
 resource "aws_iam_role_policy_attachment" "send_cloudwatch_alarms_to_slack_basic" {
   role       = aws_iam_role.send_cloudwatch_alarms_to_slack.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
+# Allow lambda to get parameters from SSM
+resource "aws_iam_role_policy_attachment" "send_cloudwatch_alarms_to_slack_ssm" {
+  role       = aws_iam_role.send_cloudwatch_alarms_to_slack.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess"
 }
 
 # Create ZIP archive with a lambda function

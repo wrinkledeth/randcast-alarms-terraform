@@ -1,9 +1,11 @@
 import urllib3
 import json
+import boto3
 
-slack_url = (
-    "https://hooks.slack.com/services/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"
-)
+# Retrive slack webhook url from SSM Parameter Store
+ssm = boto3.client("ssm")
+slack_url = ssm.get_parameters(Names=["slack_url"])["Parameters"][0]["Value"]
+
 http = urllib3.PoolManager()
 
 
@@ -55,6 +57,7 @@ def lambda_handler(event, context):
     # print("Context:")
     # print("-------------------------")
     # print(context)
+    print(event)
     sns_message = json.loads(event["Records"][0]["Sns"]["Message"])
     alarm = get_alarm_attributes(sns_message)
 
