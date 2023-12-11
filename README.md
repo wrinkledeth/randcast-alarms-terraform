@@ -50,5 +50,5 @@ terraform destroy # kill previously provisioned resources
 - Base Goerli: "Transaction successful(fulfill_randomness) with chain_id(84531)"
 
 ## Rolldice contract locations (for testing)
-eth goerli: 0xCA7990A5639560Df0e20aEAD45AD2c0990768a64
-op goerli: 0x278c8a42b3506724153625e7e233BD5940042F0F
+- eth goerli: 0xCA7990A5639560Df0e20aEAD45AD2c0990768a64
+- op goerli: 0x278c8a42b3506724153625e7e233BD5940042F0F
