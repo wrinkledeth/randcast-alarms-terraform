@@ -1,3 +1,10 @@
+# # Slack URL is stored in SSM Parameter Store
+# resource "aws_ssm_parameter" "slack_url" {
+#   name  = "slack_url"
+#   type  = "SecureString"
+#   value = "https://hooks.slack.com/services/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"
+# }
+
 # Create an IAM role for the lambda function
 resource "aws_iam_role" "send_cloudwatch_alarms_to_slack" {
   name = "send-cloudwatch-alarms-to-slack"
