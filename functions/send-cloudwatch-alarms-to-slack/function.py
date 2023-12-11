@@ -31,7 +31,7 @@ def send_slack_notification(alarm):
                 "type": "header",
                 "text": {
                     "type": "plain_text",
-                    "text": ":tada: Alarm: " + alarm["name"],
+                    "text": ":tada: " + alarm["name"],
                 },
             },
             {"type": "divider"},
