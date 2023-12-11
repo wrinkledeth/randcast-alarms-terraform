@@ -6,7 +6,7 @@ Terraform to deploy Randcast AWS Metrics and Alarms infrastructure.
 ## Usage
 ```bash
 cd tf
-terraform init # download provider plugin to interact with docker
+terraform init # download provider plugins to intereact with aws
 terraform validate # validate
 terraform plan # view the state changes that will occur
 terraform apply # provision the resources
@@ -43,7 +43,7 @@ terraform destroy # kill previously provisioned resources
 - [ ] OP Sepolia (11155420)
 - [ ] Base Sepolia (84532)
 
-## Metric Filters Used
+## Metric Filters Implemented 
 (us-east-2)
 - Eth Goerli: "Transaction successful(fulfill_randomness) with chain_id(5)"
 - OP Goerli: "Transaction successful(fulfill_randomness) with chain_id(420)"
