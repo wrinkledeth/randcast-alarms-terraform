@@ -30,7 +30,7 @@ resource "aws_sns_topic" "alarms" {
 
   # Important! Only for testing, set to log every single message 
   # For production, set it to 0 or close
-  lambda_success_feedback_sample_rate = 100
+  lambda_success_feedback_sample_rate = 0 # 100 when debugging
 
   lambda_failure_feedback_role_arn = aws_iam_role.sns_logs.arn
   lambda_success_feedback_role_arn = aws_iam_role.sns_logs.arn
