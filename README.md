@@ -43,13 +43,12 @@ terraform destroy # kill previously provisioned resources
 - [ ] OP Sepolia (11155420)
 - [ ] Base Sepolia (84532)
 
-## Alarms Currently Implemented
+## Metric Filters Used
 (us-east-2)
+- Eth Goerli: "Transaction successful(fulfill_randomness) with chain_id(5)"
+- OP Goerli: "Transaction successful(fulfill_randomness) with chain_id(420)"
+- Base Goerli: "Transaction successful(fulfill_randomness) with chain_id(84531)"
 
-Eth Goerli: "Transaction successful(fulfill_randomness) with chain_id(5)"
-
-OP Goerli: "Transaction successful(fulfill_randomness) with chain_id(420)"
-
-Base Goerli: "Transaction successful(fulfill_randomness) with chain_id(84531)"
-
-
+## Rolldice contract locations (for testing)
+eth goerli: 0xCA7990A5639560Df0e20aEAD45AD2c0990768a64
+op goerli: 0x278c8a42b3506724153625e7e233BD5940042F0F
