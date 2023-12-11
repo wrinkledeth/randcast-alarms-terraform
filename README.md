@@ -5,7 +5,7 @@ Terraform to deploy Randcast AWS Metrics and Alarms infrastructure.
 
 ## Usage
 ```bash
-cd tf
+cd terraform
 terraform init # download provider plugins to intereact with aws
 terraform validate # validate
 terraform plan # view the state changes that will occur
@@ -16,7 +16,7 @@ terraform destroy # kill previously provisioned resources
 ## Folder structure
 ```bash
 .
-└── tf/
+└── terraform/
     ├── cloudwatch.tf
     ├── lambda-s3-bucket.tf
     ├── lambda.tf
