@@ -48,8 +48,11 @@ terraform destroy # kill previously provisioned resources
 
 ## Alarms Currently Implemented
 (us-east-2)
+
 Eth Goerli: "Transaction successful(fulfill_randomness) with chain_id(5)"
+
 OP Goerli: "Transaction successful(fulfill_randomness) with chain_id(420)"
+
 Base Goerli: "Transaction successful(fulfill_randomness) with chain_id(84531)"
 
 
