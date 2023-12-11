@@ -30,7 +30,7 @@ terraform destroy # kill previously provisioned resources
 ```
 
 ## Slack Alarm Example
-![](.images/alarm_example.png)
+![](alarm_example.png)
 
 ## Planned networks to alert on
 - [ ] Eth (1)

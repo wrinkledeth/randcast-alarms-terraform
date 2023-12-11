@@ -4,7 +4,8 @@ import boto3
 
 # Retrive slack webhook url from SSM Parameter Store
 ssm = boto3.client("ssm")
-slack_url = ssm.get_parameters(Names=["slack_url"])["Parameters"][0]["Value"]
+parameter = ssm.get_parameter(Name="slack_url", WithDecryption=True)
+slack_url = parameter["Parameter"]["Value"]
 
 http = urllib3.PoolManager()
 
@@ -51,12 +52,6 @@ def send_slack_notification(alarm):
 
 
 def lambda_handler(event, context):
-    # print("Event:")
-    # print("-------------------------")
-    # print(event)
-    # print("Context:")
-    # print("-------------------------")
-    # print(context)
     print(event)
     sns_message = json.loads(event["Records"][0]["Sns"]["Message"])
     alarm = get_alarm_attributes(sns_message)
