@@ -7,12 +7,9 @@ Terraform to deploy Randcast AWS Metrics and Alarms infrastructure.
 ```bash
 cd tf
 terraform init # download provider plugin to interact with docker
-terraform fmt # format your terraform
 terraform validate # validate
 terraform plan # view the state changes that will occur
 terraform apply # provision the resources
-terraform show # inspect state
-terraform state list # list resources in project state
 terraform destroy # kill previously provisioned resources 
 ```
 
