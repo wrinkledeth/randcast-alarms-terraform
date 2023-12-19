@@ -89,8 +89,8 @@ terraform destroy # kill previously provisioned resources
 - op goerli: 0x278c8a42b3506724153625e7e233BD5940042F0F (sub #87)
 - eth sepolia: 0x98dB27BCa7193dae03dBaA67d16B90B49F2C6722 (sub #112)
 
-## Slack Alarms Secret Manual Proccess
-Note: The slack_url webhook secret was manually added to SSM Parameter Store encrypted. 
+## Slack Webhook URL secret manually uplaoded
+Note: The slack_url webhook secret was manually added to SSM Parameter Store encrypted via console, and is referenced by the lambda code like so: 
 
 ```python
 # functions/send-cloudwatch-alarms-to-slack/function.py
