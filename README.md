@@ -44,7 +44,7 @@ terraform destroy # kill previously provisioned resources
 ## Slack Alarm Example
 ![](alarm_example.png)
 
-## Networked where Alerts are currently suppported 
+## Networks where Alerts are currently suppported 
 - [x] Eth Mainnet (1)
 - [x] OP Mainnet (10)
 - [x] Base Mainnet (8453)
