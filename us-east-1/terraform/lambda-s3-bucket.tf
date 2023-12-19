@@ -1,6 +1,6 @@
 # Generate a random string to create a unique S3 bucket
 resource "random_pet" "lambda_bucket_name" {
-  prefix = "lambda"
+  prefix = "lambda-${var.region}"
   length = 2
 }
 

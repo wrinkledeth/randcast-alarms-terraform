@@ -1,6 +1,6 @@
 # Create an IAM role for the SNS with access to CloudWatch
 resource "aws_iam_role" "sns_logs" {
-  name = "sns-logs"
+  name = "sns-logs-${var.region}"
 
   assume_role_policy = <<POLICY
 {

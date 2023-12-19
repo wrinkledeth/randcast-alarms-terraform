@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-east-2:118775932978:slack_alarms:c7b6f212-28bf-4e96-8fab-1c7a25514155",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "1eb24105-aef2-5059-8b05-1cf5d38c8c7a",
+                "TopicArn": "arn:aws:sns:us-east-2:118775932978:slack_alarms",
+                "Subject": "ALARM: \"(OP GOERLI) Randomness Fulfilled\" in US East (Ohio)",
+                "Message": "{\"AlarmName\":\"(OP GOERLI) Randomness Fulfilled\",\"AlarmDescription\":\"This metric checks op randomness fulfilled\",\"AWSAccountId\":\"118775932978\",\"AlarmConfigurationUpdatedTimestamp\":\"2023-12-11T00:13:49.364+0000\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint [1.0 (11/12/23 02:59:00)] was greater than or equal to the threshold (1.0).\",\"StateChangeTime\":\"2023-12-11T03:00:14.900+0000\",\"Region\":\"US East (Ohio)\",\"AlarmArn\":\"arn:aws:cloudwatch:us-east-2:118775932978:alarm:(OP GOERLI) Randomness Fulfilled\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"OKActions\":[],\"AlarmActions\":[\"arn:aws:sns:us-east-2:118775932978:slack_alarms\"],\"InsufficientDataActions\":[],\"Trigger\":{\"MetricName\":\"op_goerli_randomness_fulfilled\",\"Namespace\":\"randcast\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":60,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"missing\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+                "Timestamp": "2023-12-11T03:00:14.953Z",
+                "SignatureVersion": "1",
+                "Signature": "Hf4SFfGkI2zHaJ/DTWsTTo8JApZUxTaWyjNrw55c36dKBO5IhSQJEvlqEZmtHGD7RiU9ZR9WnI29WQ9DZ+4my6jVmSLYTPAugFmvo665aGWe8rB4Ei+syRONhOYVwPxzAIvgi7zqy8HWby4pkZ68yZR1jvUE4o4UpriY49bbTOxdGr32beLQDkKWfbrQpOWHYEacH5Ejdxmw9gX5SxDXQDmwpj7U2fLnyeMc6bhorby+thPxnemLxQ7SYn4ylw364r/SBhAyYnF5ku7w+YnFCO/xSXPLslpssKDn/oDMsJNbvQsH18u5SOR4LaOOVPz4/RaHsqNxlDtXdyy20nrm5A==",
+                "SigningCertUrl": "https://sns.us-east-2.amazonaws.com/SimpleNotificationService-01d088a6f77103d0fe307c0069e40ed6.pem",
+                "UnsubscribeUrl": "https://sns.us-east-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-2:118775932978:slack_alarms:c7b6f212-28bf-4e96-8fab-1c7a25514155",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}

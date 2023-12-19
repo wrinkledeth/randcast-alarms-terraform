@@ -1,6 +1,6 @@
 # Create an IAM role for the lambda function
 resource "aws_iam_role" "send_cloudwatch_alarms_to_slack" {
-  name = "send-cloudwatch-alarms-to-slack"
+  name = "send-cloudwatch-alarms-to-slack-${var.region}"
 
   assume_role_policy = <<POLICY
 {

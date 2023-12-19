@@ -1,7 +1,7 @@
 # Best practices for using Terraform 
 # https://cloud.google.com/docs/terraform/best-practices-for-terraform
 provider "aws" {
-  region = "us-east-2"
+  region = var.region
 }
 
 terraform {
