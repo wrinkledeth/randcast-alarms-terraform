@@ -45,15 +45,15 @@ terraform destroy # kill previously provisioned resources
 ![](alarm_example.png)
 
 ## Networked where Alerts are currently suppported 
-- [x] Eth (1)
-- [x] OP (10)
-- [x] Base (8453)
+- [x] Eth Mainnet (1)
+- [x] OP Mainnet (10)
+- [x] Base Mainnet (8453)
 - [x] Eth Goerli (5)  
 - [x] OP Goerli (420)
 - [x] Base Goerli (84531)
 - [x] Eth Sepolia (11155111)
-- [x] OP Sepolia (11155420) <- randcast not yet implemented
-- [x] Base Sepolia (84532) <- randcast not yet implemented
+- [x] OP Sepolia (11155420) <- (randcast not yet implemented)
+- [x] Base Sepolia (84532) <- (randcast not yet implemented)
 
 ## Metric Filters Implemented 
 
