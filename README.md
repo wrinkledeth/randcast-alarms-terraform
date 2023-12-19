@@ -27,6 +27,7 @@ terraform destroy # kill previously provisioned resources
 
 ## Folder structure
 ```bash
+(within us-east-1 or us-east-2)
 .
 └── terraform/
     ├── cloudwatch.tf
@@ -34,8 +35,7 @@ terraform destroy # kill previously provisioned resources
     ├── lambda.tf
     ├── provider.tf
     ├── sns-topic.tf
-    ├── terraform.tfstate
-    └── terraform.tfstate.backup
+    └── variables.tf
 └── functions/
     └── send-cloudwatch-alarms-to-slack/
         └── function.py
